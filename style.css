@@ -1,0 +1,605 @@
+#body{
+    margin-left: 77px;
+    margin-right: 77px;
+    margin-top: 0px;
+    border: 0px;
+    background-color: #F5F5EF;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: black;
+}
+
+
+/* back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+    opacity: 80%;
+    z-index: 200;
+  }
+#btn-back-to-top:hover {
+    transform: scale(1.1);
+  }
+
+
+#pages{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+#pages:link {
+    text-decoration: none;
+}
+#pages:visited {
+    text-decoration: none;
+}
+#pages:hover {
+    text-decoration: none;
+    color: gray;
+}  
+#pages:active {
+    text-decoration: none;
+    color: grey;
+}
+  
+
+
+/* DROPDOWN */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd; color: black; font-weight: bold; text-decoration: none;}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .pages {background-color: #8b8f8c;}
+
+
+
+/* To centre an image*/
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+/* to space contents evenly horizontally */
+.space_evenly{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#flingcontent{
+    list-style-type: none;
+    padding: 0%;
+}
+
+
+/* button */
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+.button:link {
+    text-decoration: none;
+    color: white;
+}
+.button:visited {
+    text-decoration: none;
+    color: white;
+}
+.button:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  color: white;
+}
+.button:active {
+    text-decoration: none;
+    color: white;
+}
+
+
+  /* infinite marquee */
+  #mainmarq{
+    border: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  #marq1 {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+  }
+  
+  #marq2 {
+    display: inline-block;
+    animation: marquee2 20s linear infinite;
+    animation-delay: 10s;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes marquee2 {
+    from {
+      transform: translateX(-200%);
+    }
+    to {
+      transform: translateX(-0%);
+    }
+  }
+
+
+/* footer */
+#foot{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 10px;
+    margin-right: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+#foot_social{
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+#foot:link {
+    text-decoration: none;
+}
+#foot:visited {
+    text-decoration: none;
+}
+#foot:hover {
+    text-decoration: none;
+    color: gray;
+}  
+#foot:active {
+    text-decoration: none;
+    color: grey;
+}
+
+.foot_icon {
+    transition: transform .2s;
+  }
+  
+.foot_icon:hover {
+    transform: scale(1.1);
+  }
+
+
+/* Chat button  */
+#chatbutton{
+    position: fixed;
+    bottom: 30px;
+    right: 0.5px;
+    z-index: 200;
+    animation: bounce 0.5s linear infinite;
+    transition: transform .2s;
+  }
+#chatbutton:hover {
+    transform: scale(1.1);
+    animation-play-state: paused;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(10%);
+    }
+  }
+
+
+
+/* STATE PAGE */
+  
+/* STATE INF0  */
+.state_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#state_website{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(15, 137, 223);
+}
+#state_website:link {
+  text-decoration: underline;
+  color: rgb(15, 137, 223);
+}
+#state_website:visited {
+  text-decoration: underline;
+  color: rgb(15, 137, 223);
+}
+#state_website:hover{
+  color: rgb(6, 100, 168);
+}
+#state_website:active {
+  text-decoration: underline;
+  color: rgb(15, 137, 223);
+}
+
+#state_map:link {
+  transform: none;
+}
+#state_map:visited {
+  transform: none;
+}
+#state_map:hover{
+  transform: scale(1.1);
+}
+#state_map:active {
+  transform: none;
+}
+
+/* RAJSTHAN MAP */
+.transparent_location_rajasthan{
+  position: absolute;
+  top: 900px;
+  left: 580px;
+}
+
+#jaipur_location{
+  position: absolute;
+  top: 1085px;
+  left: 455px;
+  transform: none;
+}
+#jaipur_location:link {
+  transform: none;
+}
+#jaipur_location:visited {
+  transform: none;
+}
+#jaipur_location:hover {
+  transform: scale(1.1);
+}  
+#jaipur_location:active {
+  transform: none;
+}
+
+
+#jodhpur_location{
+  position: absolute;
+  top: 1090px;
+  left: 275px;
+  transform: none;
+}
+#jodhpur_location:link {
+  transform: none;
+}
+#jodhpur_location:visited {
+  transform: none;
+}
+#jodhpur_location:hover {
+  transform: scale(1.1);
+}  
+#jodhpur_location:active {
+  transform: none;
+}
+
+
+#udaipur_location{
+  position: absolute;
+  top: 1235px;
+  left: 325px;
+  transform: none;
+}
+#udaipur_location:link {
+  transform: none;
+}
+#udaipur_location:visited {
+  transform: none;
+}
+#udaipur_location:hover {
+  transform: scale(1.1);
+}  
+#udaipur_location:active {
+  transform: none;
+}
+
+
+#jaisalmer_location{
+  position: absolute;
+  top: 1070px;
+  left: 155px;
+  transform: none;
+}
+#jaisalmer_location:link {
+  transform: none;
+}
+#jaisalmer_location:visited {
+  transform: none;
+}
+#jaisalmer_location:hover {
+  transform: scale(1.1);
+}  
+#jaisalmer_location:active {
+  transform: none;
+}
+
+
+#ranthambore_location{
+  position: absolute;
+  top: 1140px;
+  left: 500px;
+  transform: none;
+}
+#ranthambore_location:link {
+  transform: none;
+}
+#ranthambore_location:visited {
+  transform: none;
+}
+#ranthambore_location:hover {
+  transform: scale(1.1);
+}  
+#ranthambore_location:active {
+  transform: none;
+}
+
+
+#mountabu_location{
+  position: absolute;
+  top: 1220px;
+  left: 270px;
+  transform: none;
+}
+#mountabu_location:link {
+  transform: none;
+}
+#mountabu_location:visited {
+  transform: none;
+}
+#mountabu_location:hover {
+  transform: scale(1.1);
+}  
+#mountabu_location:active {
+  transform: none;
+}
+
+#clickhere_rajasthan{
+  position: absolute;
+  top: 1096px;
+  left: 160px;
+  z-index: 1000;
+}
+
+/* HIMACHAL MAP */
+.transparent_location_himachal{
+  position: absolute;
+  top: 858px;
+  left: 580px;
+}
+
+#shimla_location{
+  position: absolute;
+  top: 1185px;
+  left: 398px;
+  transform: none;
+}
+#shimla_location:link {
+  transform: none;
+}
+#shimla_location:visited {
+  transform: none;
+}
+#shimla_location:hover {
+  transform: scale(1.1);
+}  
+#shimla_location:active {
+  transform: none;
+}
+
+
+#manali_location{
+  position: absolute;
+  top: 1075px;
+  left: 365px;
+  transform: none;
+}
+#manali_location:link {
+  transform: none;
+}
+#manali_location:visited {
+  transform: none;
+}
+#manali_location:hover {
+  transform: scale(1.1);
+}  
+#manali_location:active {
+  transform: none;
+}
+
+
+#kasauli_location{
+  position: absolute;
+  top: 1215px;
+  left: 305px;
+  transform: none;
+}
+#kasauli_location:link {
+  transform: none;
+}
+#kasauli_location:visited {
+  transform: none;
+}
+#kasauli_location:hover {
+  transform: scale(1.1);
+}  
+#kasauli_location:active {
+  transform: none;
+}
+
+
+#dalhousie_location{
+  position: absolute;
+  top: 990px;
+  left: 185px;
+  transform: none;
+}
+#dalhousie_location:link {
+  transform: none;
+}
+#dalhousie_location:visited {
+  transform: none;
+}
+#dalhousie_location:hover {
+  transform: scale(1.1);
+}  
+#dalhousie_location:active {
+  transform: none;
+}
+
+#clickhere_himachal{
+  position: absolute;
+  top: 1015px;
+  left: 186px;
+  z-index: 1000;
+}
+
+
+/* GOA MAP */
+.transparent_location_goa{
+  position: absolute;
+  top: 897px;
+  left: 580px;
+}
+
+#anjuna_location{
+  position: absolute;
+  top: 1020px;
+  left: 210px;
+  transform: none;
+}
+#anjuna_location:link {
+  transform: none;
+}
+#anjuna_location:visited {
+  transform: none;
+}
+#anjuna_location:hover {
+  transform: scale(1.1);
+}  
+#anjuna_location:active {
+  transform: none;
+}
+
+
+#aguada_location{
+  position: absolute;
+  top: 1045px;
+  left: 220px;
+  transform: none;
+}
+#aguada_location:link {
+  transform: none;
+}
+#aguada_location:visited {
+  transform: none;
+}
+#aguada_location:hover {
+  transform: scale(1.1);
+}  
+#aguada_location:active {
+  transform: none;
+}
+
+
+#church_location{
+  position: absolute;
+  top: 1050px;
+  left: 295px;
+  transform: none;
+}
+#church_location:link {
+  transform: none;
+}
+#church_location:visited {
+  transform: none;
+}
+#church_location:hover {
+  transform: scale(1.1);
+}  
+#church_location:active {
+  transform: none;
+}
+
+
+#carnival_location{
+  position: absolute;
+  top: 1060px;
+  left: 240px;
+  transform: none;
+}
+#carnival_location:link {
+  transform: none;
+}
+#carnival_location:visited {
+  transform: none;
+}
+#carnival_location:hover {
+  transform: scale(1.1);
+}  
+#carnival_location:active {
+  transform: none;
+}
+
+#clickhere_goa{
+  position: absolute;
+  top: 1075px;
+  left: 295px;
+  z-index: 1000;
+}
+
+
